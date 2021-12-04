@@ -7,9 +7,11 @@ const Item =(props)=>{
     const {title,amount} = props
     const status = amount<0 ?  "expense":"income"
     const symmol = amount<0 ?  "-":"+"
-
+    const formatNumber=(num)=>{
+        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g,'$1,')
+    }
     return (
-        <li className={status}>{title}<span>{symmol}{Math.abs(amount)}</span>
+        <li className={status}>{title}<span>{symmol}{formatNumber(Math.abs(amount))}</span>
 
         </li> 
     );
