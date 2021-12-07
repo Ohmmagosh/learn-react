@@ -1,9 +1,11 @@
-import { useContext } from "react/cjs/react.development"
-import DataContext from "../data/DataContext"
+import React,{ useContext } from "react"
+// import { useContext } from "react/cjs/react.development"
+import  DataContext  from "../data/DataContext"
 import './reportComponent.css'
 
 const ReportComponent=()=>{
     const {income,expense}=useContext(DataContext)
+    console.log(DataContext)
     const formatNumber=(num)=>{
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g,'$1,')
     }

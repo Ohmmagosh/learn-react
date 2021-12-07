@@ -43,7 +43,7 @@ function App(){
           <h1>บัญชีรายรับ - รายจ่าย</h1>
           
           <Router>
-            <div>
+            
               <ul className="horizontal-menu">
                 <li>
                   <Link to="/">ข้อมูลบัญชี</Link>
@@ -54,11 +54,9 @@ function App(){
               </ul>
               <Routes>
                 <Route path="/" element={<ReportComponent/>}/>
-              </Routes>
-              <Routes>
                 <Route path="/insert" element={<><FormComponent onAddItem={onAddNewItem}/><Transection item = {item}/></>}/>
               </Routes>
-            </div>
+            
           </Router>
           
           {/* {ShowReport && <ReportComponent/>} */}
