@@ -2,4 +2,4 @@
 
 learn-react
 
-https://festive-clarke-eedf0c.netlify.app/insert
+https://festive-clarke-eedf0c.netlify.app/
